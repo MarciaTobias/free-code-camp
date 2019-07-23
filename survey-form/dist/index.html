@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <body>
+<section id="main-wrapper">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Let us know your opinion about our service!</p>
+    <form id="survey-form">
+        <div class="row">
+            <div class="label">
+                <label>Have you ever ordered a speaker from Think?</label>
+            </div>
+            <div class="input">
+                <select id="dropdown" class="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label id="name-label" for="name"> Name: </label>
+            </div>
+            <div class="input">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label id="email-label" for="email"> Email: </label>
+            </div>
+            <div class="input">
+                <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label id="number-label" for="number"> Age: </label>
+            </div>
+            <div class="input">
+                <input type="number" name="age" id="number" min="1" max="110" class="input-field" placeholder="Age">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label>Gender</label>
+            </div>
+            <div class="input">
+                <ul style="list-style: none;">
+                    <li class="radio"><label>Female<input name="radio-buttons" value="1"  type="radio" class="gender" ></label></li>
+                    <li class="radio"><label>Male<input name="radio-buttons" value="2"  type="radio" class="gender" ></label></li>
+                    <li class="radio"><label>N/A<input name="radio-buttons" value="3"  type="radio" class="gender" ></label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label>What do you like about our speaker?<br>(Check all that apply): </label>
+            </div>
+            <div class="input">
+                <ul id="preferences">
+                    <li class="checkbox"><label><input name="speaker" value="1" type="checkbox" class="userRatings">Quality of Sound</label></li>
+                    <li class="checkbox"><label><input name="speaker" value="3" type="checkbox" class="userRatings">Size</label></li>
+                    <li class="checkbox"><label><input name="speaker" value="4" type="checkbox" class="userRatings">Many colors option</label></li>
+                    <li class="checkbox"><label><input name="speaker" value="5" type="checkbox" class="userRatings">Be waterproof</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label for="comments">Any Comments, Questions or Suggestions?</label>
+            </div>
+            <div class="input">
+                <textarea id="comments" class="input-field" style="height:60px;resize:vertical;" name="comment"></textarea>
+            </div>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</section>
+<footer>
+    <p>Marcia Tobias | Copyright 2019</p>
+</footer>
+</body>
+  
+  
+
+</body>
+
+</html>
