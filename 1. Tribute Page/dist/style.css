@@ -1,0 +1,60 @@
+body {
+  font-family: "Helvetica Neue";
+  background-color: white;
+  text-align: center;
+}
+
+header {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  background-color: rgb(252, 235, 241, 0.7);
+}
+
+.image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.img-div {
+  justify-content: center;
+}
+
+article {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+article p {
+  text-align: justify;
+}
+
+.tribute-info h2 {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.tribute-link {
+  text-decoration: none;
+  color: black;
+}
+
+  footer {
+    padding-top: 50px;
+  }
+
+@media screen and (max-width: 833px) {
+  
+  footer {
+    padding-top: 50px;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+
+}
