@@ -1,0 +1,76 @@
+.collection {
+  margin: 6rem auto 6rem auto;
+}
+
+#shoes,
+#earring,
+#new {
+  width: 100%;
+  height: auto;
+}
+/* ========================= */
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1.8em;
+  padding: 14px 34px;
+  border-radius: 5%;
+}
+
+
+/* Section Club */
+
+input {
+	margin: auto;
+}
+
+#club {
+  background-color: black;
+  padding: 20vw 0 20vw 0;
+	margin: 6rem auto 16rem auto;
+}
+
+.text-white {
+  font-style: italic;
+}
+
+/* Align the footer to the center */
+footer {
+  padding-top: 10%;
+  text-align: center;
+}
+
+/* Media Queries */
+
+ /* Small devices (landscape phones, 576px to 767.98px) */
+@media (min-width: 36em) and (max-width: 47.98em) {
+ 
+}
