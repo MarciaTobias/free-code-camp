@@ -1,103 +1,106 @@
 <!DOCTYPE html>
 <html lang="en" >
-
 <head>
   <meta charset="UTF-8">
-  <title>Survey Form</title>
-  
-  
-  
-      <link rel="stylesheet" href="./style.css">
-
-  
+  <title>FCC Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-
-  <body>
-<section id="main-wrapper">
+<!-- partial:index.partial.html -->
+<body id="main_body">
+  <div id="main-wrapper">
     <h1 id="title">Survey Form</h1>
-    <p id="description">Let us know your opinion about our service!</p>
-    <form id="survey-form">
-        <div class="row">
-            <div class="label">
-                <label>Have you ever ordered a speaker from Think?</label>
-            </div>
-            <div class="input">
-                <select id="dropdown" class="dropdown">
-                    <option disabled value>Select an option</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="label">
-                <label id="name-label" for="name"> Name: </label>
-            </div>
-            <div class="input">
-                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
-            </div>
-        </div>
-        <div class="row">
-            <div class="label">
-                <label id="email-label" for="email"> Email: </label>
-            </div>
-            <div class="input">
-                <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
-            </div>
-        </div>
-        <div class="row">
-            <div class="label">
-                <label id="number-label" for="number"> Age: </label>
-            </div>
-            <div class="input">
-                <input type="number" name="age" id="number" min="1" max="110" class="input-field" placeholder="Age">
-            </div>
-        </div>
-        <div class="row">
-            <div class="label">
-                <label>Gender</label>
-            </div>
-            <div class="input">
-                <ul style="list-style: none;">
-                    <li class="radio"><label>Female<input name="radio-buttons" value="1"  type="radio" class="gender" ></label></li>
-                    <li class="radio"><label>Male<input name="radio-buttons" value="2"  type="radio" class="gender" ></label></li>
-                    <li class="radio"><label>N/A<input name="radio-buttons" value="3"  type="radio" class="gender" ></label></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="label">
-                <label>What do you like about our speaker?<br>(Check all that apply): </label>
-            </div>
-            <div class="input">
-                <ul id="preferences">
-                    <li class="checkbox"><label><input name="speaker" value="1" type="checkbox" class="userRatings">Quality of Sound</label></li>
-                    <li class="checkbox"><label><input name="speaker" value="3" type="checkbox" class="userRatings">Size</label></li>
-                    <li class="checkbox"><label><input name="speaker" value="4" type="checkbox" class="userRatings">Many colors option</label></li>
-                    <li class="checkbox"><label><input name="speaker" value="5" type="checkbox" class="userRatings">Be waterproof</label></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="label">
-                <label for="comments">Any Comments, Questions or Suggestions?</label>
-            </div>
-            <div class="input">
-                <textarea id="comments" class="input-field" style="height:60px;resize:vertical;" name="comment"></textarea>
-            </div>
-        </div>
-        <button id="submit" type="submit">Submit</button>
+    <form id="survey-form" method="post" action="">
+      <div class="form_description">
+        <p id="description">Let us know your opinion about our service!</p>
+      </div>
+      
+      <ul>  
+        <li>
+          <label class="label">Have you ever ordered a speaker from Think? </label>
+          <div>
+            <select id="dropdown" class="dropdown"> 
+			<option value="" selected="selected"></option>
+              <option value="1" >Yes</option>
+              <option value="2" >No</option>
+            </select>
+          </div>
+        </li>
+
+        <li>
+          <label id="name-label" for="name">Name </label>
+          <span>
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+		      </span>
+        </li>
+
+        <li>
+          <label id="email-label" for="email">Email </label>
+          <div>
+            <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+          </div>
+        </li>
+
+        <li>
+          <label id="number-label" for="number">Age </label>
+          <div>
+            <input type="number" name="age" id="number" min="1" max="110" class="input-field" placeholder="Age">
+          </div>
+        </li>
+
+        <li>
+          <label id="gender">Gender </label>
+          <span>
+            <input class="radio" name="radio-buttons" type="radio" value="1"/>
+            <label class="choice" for="female">Female</label>
+            
+            <input class="radio" name="radio-buttons" type="radio" value="2"/>
+            <label class="choice" for="male">Male</label>
+            
+            <input class="radio" name="radio-buttons" type="radio" value="3"/>
+            <label class="choice" for="n/a">N/A</label>
+            </span>
+        </li>
+
+        <li>
+          <label class="description">What do you like about our speaker? (Check all that apply): </label>
+          <span>
+            <input class="checkbox" type="checkbox" value="1" />
+            <label class="choice">Quality of Sound</label>
+            
+            <input class="checkbox" type="checkbox" value="1" />
+            <label class="choice">Size</label>
+            
+            <input class="checkbox" type="checkbox" value="1" />
+            <label class="choice">Many Colors Option</label>
+            
+            <input class="checkbox" type="checkbox" value="1" />
+            <label class="choice">Waterproof</label>
+          </span>
+        </li>
+
+        <li>
+          <label id="question">Any Comments, Questions or Suggestions?</label>
+          <div>
+            <textarea id="comments" name="element_4" class="textarea"></textarea>
+          </div>
+        </li>
+      </ul>
+      
+      <button id="submit" type="submit" class="center-block">Submit</button>
     </form>
-</section>
-<footer>
-    <p>Marcia Tobias | Copyright 2019</p>
-</footer>
+    
+  </div>
+    <footer>
+      <p class="pt-5">Copyright &copy; 2019 | Marcia Tobias</p>
+    </footer>
 </body>
-  
-  
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
 
 </body>
-
 </html>
