@@ -8,7 +8,7 @@
   width: 100%;
   height: auto;
 }
-/* ========================= */
+
 .image {
   opacity: 1;
   display: block;
@@ -44,9 +44,6 @@
   padding: 14px 34px;
   border-radius: 5%;
 }
-
-
-/* Section Club */
 
 input {
 	margin: auto;
